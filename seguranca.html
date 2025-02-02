@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - Segurança</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+}
+       /* Menu Responsivo */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            background-color: rgba(255, 255, 255, 0.35); /* Transparência ajustada */
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ff9f00;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .category h2 {
+            font-size: 1.5rem;
+            color: #ff9f00;
+            margin-bottom: 10px;
+        }
+
+        .links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+        }
+
+        .links a {
+            color: #000; /* Texto preto para contraste */
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #ff9f00;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreeu.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Central de Segurança e Links Úteis</h1>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">marmouts@proton.me | Code by Cyber_Marmouts</p>
+
+        <nav>
+            <ul>
+                <li><a href="#seguranca-bancaria">🏦 Segurança Bancária</a></li>
+                <li><a href="#seguranca-cibernetica">🔒 Segurança Cibernética</a></li>
+                <li><a href="#controle-de-pais">👨‍👩‍👧‍👦 Controle de Pais</a></li>
+                <li><a href="#outros-recursos">💵 Outros Recursos</a></li>
+                <li><a href="#recuperacao-de-contas">🔑 Recuperação de Contas</a></li>
+                <li><a href="#osint">🕵️ OSINT</a></li>
+                <li><a href="#ctf">🏆 CTF</a></li> <!-- Adicionado menu CTF -->
+            </ul>
+        </nav>
+    
+        <div class="container">
+            <div id="seguranca-bancaria" class="category">
+                <h2>Segurança Bancária</h2>
+                <ul class="links">
+                    <li><a href="https://www.bcb.gov.br/meubc/registrato" target="_blank">Verificar contas bancárias e relatórios bancários</a></li>
+                    <li><a href="https://permissao.negocios.redesim.gov.br" target="_blank">Impedir abertura de novos CNPJ</a></li>
+                </ul>
+            </div>
+    
+            <div id="seguranca-cibernetica" class="category">
+                <h2>Segurança Cibernética</h2>
+                <ul class="links">
+                    <li><a href="https://cadastropre.com.br/" target="_blank">Verificar Chips pré-pagos</a></li>
+                    <li><a href="https://justdeleteme.xyz" target="_blank">Deletando suas contas</a></li>
+                    <li><a href="https://delegaciavirtual.sc.gov.br" target="_blank">Polícia Civil (B.O. SC)</a></li>
+                    <li><a href="https://www.cert.br" target="_blank">Central de Atendimento a Incidentes de Segurança (CERT.br)</a></li>
+                    <li><a href="https://www.safernet.org.br" target="_blank">Central Nacional de Denúncias de Crimes Cibernéticos (Safernet)</a></li>
+                    <li><a href="https://www.delegaciaeletronica.policiacivil.sp.gov.br" target="_blank">Polícia Civil de São Paulo (B.O. SP)</a></li>
+                    <li><a href="https://delegaciavirtual.pr.gov.br" target="_blank">Polícia Civil do Paraná (B.O. PR)</a></li>
+                    <li><a href="https://www.delegaciaonline.rs.gov.br" target="_blank">Polícia Civil do Rio Grande do Sul (B.O. RS)</a></li>
+                    <li><a href="https://dedic.pcivil.rj.gov.br" target="_blank">Polícia Civil do Rio de Janeiro (B.O. RJ)</a></li>
+                </ul>
+            </div>
+    
+            <div id="controle-de-pais" class="category">
+                <h2>Controle de Pais</h2>
+                <ul class="links">
+                    <li><a href="https://support.xbox.com/pt-BR/help/xbox-360/security/xbox-live-parental-control" target="_blank">Xbox</a></li>
+                    <li><a href="https://www.playstation.com/pt-br/parental-controls" target="_blank">Play Station</a></li>
+                    <li><a href="https://www.microsoft.com/pt-br/microsoft-365/family-safety" target="_blank">Microsoft</a></li>
+                    <li><a href="https://maisgeek.com/como-ativar-o-controle-dos-pais-no-discord" target="_blank">Discord</a></li>
+                </ul>
+            </div>
+    
+            <div id="outros-recursos" class="category">
+                <h2>Outros Recursos</h2>
+                <ul class="links">
+                    <li><a href="https://www.serasa.com.br" target="_blank">Consulta de CPF e Dívidas (Serasa)</a></li>
+                    <li><a href="https://servicos.receita.fazenda.gov.br" target="_blank">Consulta de CPF (Receita Federal)</a></li>
+                    <li><a href="https://www.consultaaparelhoimpedido.com.br" target="_blank">Consulta de IMEI de Celular</a></li>
+                    <li><a href="https://www.iti.gov.br" target="_blank">Certificados Digitais e Segurança Eletrônica (ITI)</a></li>
+                    <li><a href="https://www.consumidor.gov.br" target="_blank">Serviços de Defesa do Consumidor (Procon)</a></li>
+                </ul>
+            </div>
+    
+            <div id="recuperacao-de-contas" class="category">
+                <h2>Recuperação de Contas de Redes Sociais</h2>
+                <ul class="links">
+                    <li><a href="https://www.recupera.ai" target="_blank">Recuperar Conta do Instagram</a></li>
+                    <li><a href="https://www.facebook.com/hacked" target="_blank">Recuperação de Contas no Facebook</a></li>
+                    <li><a href="https://help.twitter.com/forms/signin" target="_blank">Suporte para Recuperação de Contas no Twitter</a></li>
+                    <li><a href="https://faq.whatsapp.com/1131652977717250/?locale=pt_BR" target="_blank">Recuperação de Conta no WhatsApp</a></li>
+                    <li><a href="https://accounts.google.com/signin/recovery" target="_blank">Google - Recuperação de Contas do Gmail</a></li>
+                    <li><a href="https://www.tiktok.com/legal/report/feedback" target="_blank">Recuperação de Contas no TikTok</a></li>
+                    <li><a href="https://www.linkedin.com/help/linkedin/ask/TS-RCA" target="_blank">Recuperação de Contas no LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div id="osint" class="category">
+                <h2>OSINT</h2>
+                <ul class="links">
+                    <li><a href="https://www.invid-project.eu/tools-and-services/invid-verification-plugin/" target="_blank">InVID-WeVerify</a> - Ferramenta para verificar vídeos e imagens, identificando metadados e analisando autenticidade.</li>
+                    <li><a href="https://lens.google/" target="_blank">Google Lens / Desktop</a> - Pesquise por imagens diretamente no navegador, usando reconhecimento visual avançado.</li>
+                    <li><a href="https://suncalc.org/" target="_blank">SunCalc.org</a> - Descubra a posição do sol e a direção das sombras em diferentes horários e locais.</li>
+                    <li><a href="https://metadata2go.com/" target="_blank">metadata2go</a> - Verifique os metadados de arquivos como imagens e vídeos diretamente online.</li>
+                    <li><a href="https://www.social-searcher.com/" target="_blank">Social-searcher</a> - Ferramenta para buscar hashtags e postagens em diversas redes sociais.</li>
+                    <li><a href="https://smat-app.com/" target="_blank">SMAT</a> - Monitore campanhas de desinformação com análise de dados de múltiplas plataformas.</li>
+                    <li><a href="https://apps.sentinel-hub.com/sentinel-playground/" target="_blank">Sentinel Hub Playground</a> - Visualize e analise imagens de satélite de alta qualidade em tempo real.</li>
+                    <li><a href="https://wikimapia.org/" target="_blank">Wikimapia</a> - Obtenha informações geográficas detalhadas com dados colaborativos.</li>
+                    <li><a href="https://etherscan.io/" target="_blank">Etherscan</a> - Explore transações de blockchain e rastreie endereços de carteiras Ethereum.</li>
+                    <li><a href="https://blockexplorer.com/" target="_blank">BlockExplorer</a> - Ferramenta para rastrear e monitorar transações no blockchain.</li>
+                    <li><a href="https://offshoreleaks.icij.org/" target="_blank">ICIJ Offshore Leaks Database</a> - Descubra informações sobre empresas offshore e suas conexões.</li>
+                    <li><a href="https://osf.io/preprints/socarxiv/" target="_blank">Soc Arxiv</a> - Biblioteca aberta para trabalhos acadêmicos revisados em ciências sociais.</li>
+                </ul>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>

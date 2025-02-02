@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - Serviços</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+}
+        nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service {
+            background-color: rgba(255, 255, 255, 0.35); /* Transparência ajustada */
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ff9f00;
+            border-radius: 8px;
+        }
+
+        .service h2 {
+            font-size: 1.5rem;
+            color: #ff9f00;
+            margin-bottom: left;
+        }
+
+        .service p {
+            font-size: 1.2rem;
+            text-align: justify;
+            color: #000; /* Texto em preto para melhor visibilidade */
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreeu.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nossos Serviços</h1>
+
+        <div class="service">
+            <h2>Monitoramento de Identidade</h2>
+            <p>Acompanhamento constante para garantir a proteção de sua identidade digital contra fraudes, vazamentos de dados e roubo de informações sensíveis.</p>
+        </div>
+
+        <div class="service">
+            <h2>Identificação de Haters</h2>
+            <p>Rastreamento e identificação de indivíduos ou grupos responsáveis por discursos de ódio e ataques nas redes sociais, protegendo sua reputação online.</p>
+        </div>
+
+        <div class="service">
+            <h2>Projeto de Segurança Familiar</h2>
+            <p>Desenvolvemos soluções completas para proteger sua família contra golpes, vazamentos de dados e ameaças digitais, garantindo um ambiente online seguro.</p>
+        </div>
+
+        <div class="service">
+            <h2>PenTest Web</h2>
+            <p>Testes de penetração para identificar vulnerabilidades em sistemas e aplicações web, assegurando proteção contra invasões e ataques cibernéticos.</p>
+        </div>
+
+        <div class="service">
+            <h2>Investigação de Fraudes</h2>
+            <p>Análise detalhada e coleta de evidências em casos de fraudes digitais, auxiliando em processos judiciais e na recuperação de perdas.</p>
+        </div>
+
+        <div class="service">
+            <h2>Assessoria para Redução de Danos Pós-Golpe</h2>
+            <p>Apoio especializado para mitigar danos após sofrer golpes cibernéticos, incluindo recuperação de dados e orientações jurídicas.</p>
+        </div>
+
+        <div class="service">
+            <h2>Documentoscopia e Grafoscopia</h2>
+            <p>Exame técnico de documentos físicos e digitais para verificar autenticidade, falsificações e alterações, auxiliando em processos judiciais e administrativos.</p>
+        </div>
+
+        <div class="service">
+            <h2>Assistência Técnica em Perícias de Computação e Segurança da Informação</h2>
+            <p>Suporte técnico especializado em investigações digitais, análise de dispositivos eletrônicos e autenticação de documentos digitais para advogados e empresas.</p>
+        </div>
+
+        <div class="service">
+            <h2>Laudos e Relatórios</h2>
+            <p>Elaboração de documentos técnicos, laudos e relatórios detalhados para suporte em investigações e processos legais.</p>
+        </div>
+
+        <section class="service">
+            <h2>Perito Cadastrado no FRBL do MPSC</h2>
+            <p>Atuo como perito cadastrado no <strong>Fundo de Reconstituição de Bens Lesados (FRBL) do Ministério Público de Santa Catarina (MPSC)</strong>, garantindo rigor técnico e confiabilidade em perícias judiciais e extrajudiciais.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - Contato</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background-color: rgba(255, 255, 255, 0.35); /* Transparência ajustada */
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ff9f00;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .contact-section h2 {
+            font-size: 1.5rem;
+            color: #ff9f00;
+            margin-bottom: 10px;
+        }
+
+        .contact-section p, .contact-section a {
+            font-size: 1.2rem;
+            color: #000; /* Texto em preto para melhor visibilidade */
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            color: #ff9f00;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreeu.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contato</h1>
+
+        <div class="contact-section">
+            <h2>E-mail</h2>
+            <p>Para assuntos relacionados à Computação Forense e Segurança da Informação, entre em contato pelo e-mail:</p>
+            <p><a href="mailto:marmouts@proton.me">marmouts@proton.me</a></p>
+        </div>
+
+        <div class="contact-section">
+            <h2>LinkedIn</h2>
+            <p>Veja meu perfil no LinkedIn para mais informações sobre minha carreira:</p>
+            <p><a href="https://www.linkedin.com/in/rafael-gustavo-s-a67594197/" target="_blank">linkedin.com/in/rafael-gustavo-silva-pinto</a></p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Credenciais Profissionais</h2>
+            <p><strong>Engº Rafael Gustavo Silva Pinto</strong></p>
+            <p><strong>CREA-SC:</strong> 106017-7</p>
+            <p><strong>Perito Cadastrado:</strong> Ministério Público de Santa Catarina - FRBL</p>
+            <ul>
+                <li>Mestre em Ciências e Tecnologia (UNIVALI-2022)</li>
+                <li>Hacker Ético Instituto Brasileiro de Cibersegurança (IBSEC, 2024)</li>
+                <li>Especialista em Computação Forense e Segurança da Informação (IPOG, 2024)</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>

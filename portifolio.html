@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - Portfólio</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+}
+
+        nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background-color: rgba(255, 255, 255, 0.35); /* Transparência ajustada */
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ff9f00;
+            border-radius: 8px;
+        }
+
+        .project h2 {
+            font-size: 1.5rem;
+            color: #ff9f00;
+            margin-bottom: 10px;
+            text-align: left; /* Alinhado à esquerda */
+        }
+
+        .project p {
+            font-size: 1.2rem;
+            text-align: justify;
+            color: #000; /* Texto em preto */
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreeu.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Portfólio</h1>
+
+        <div class="project">
+            <h2>Automation of Domain and Subdomain Reconnaissance in Bash</h2>
+            <p>Desenvolvimento de uma ferramenta em Bash para coleta de informações essenciais para análise de segurança, incluindo enumeração de subdomínios, escaneamento de portas e identificação de tecnologias. Utiliza Assetfinder, Nmap, WhatWeb e Gobuster, organizando os resultados para investigações detalhadas.</p>
+            <p><strong>Competências:</strong> Bash, Penetration Testing, Cibersegurança.</p>
+        </div>
+
+        <div class="project">
+            <h2>ACIDD V - Ferramenta de Busca de Dados Vazados</h2>
+            <p>Ferramenta de uso individual para reunir dados vazados de fontes online, utilizando conhecimentos de OSINT com Python. Ajuda na segurança digital pessoal e prevenção de fraudes.</p>
+            <p><strong>Competências:</strong> Python, Segurança da Informação, Linux, Prevenção de Fraudes.</p>
+        </div>
+
+        <div class="project">
+            <h2>MVP - Security Hub and Useful Links</h2>
+            <p>Plataforma centralizada de recursos para segurança cibernética, relatórios bancários, controle parental, OSINT e CTFs. Design responsivo e acessível, com ferramentas como InVID e Etherscan para análises avançadas.</p>
+            <p><strong>Competências:</strong> HTML, UX Design, OSINT.</p>
+        </div>
+
+        <div class="project">
+            <h2>Automação de Análises Metagenômicas</h2>
+            <p>Uso do QIIME 2 e ferramentas Linux para processar grandes volumes de dados de DNA/RNA ambiental. Inclui desenvolvimento de pipelines automatizados e conteúdos educacionais no YouTube.</p>
+            <p><strong>Competências:</strong> Bioinformática, QIIME 2, Linux, Python.</p>
+        </div>
+
+        <div class="project">
+            <h2>Projeto de Mineração de Chia Coin (XCH)</h2>
+            <p>Implementação de ambiente para mineração de Chia Coin, com otimização de hardware e armazenamento de 80 TB. Projeto explorou a viabilidade do modelo de mineração baseado em espaço e tempo.</p>
+            <p><strong>Competências:</strong> Blockchain, Criptomoedas, Infraestrutura de TI.</p>
+        </div>
+
+        <div class="project">
+            <h2>Tecnova - Soluções Ambientais</h2>
+            <p>Desenvolvimento de equipamento para controle microbiológico em lubrificantes industriais. Projeto avançado com validação comercial, resultando em aumento da vida útil dos lubrificantes.</p>
+            <p><strong>Competências:</strong> Gestão de Projetos, Inovação Tecnológica.</p>
+        </div>
+
+        <div class="project">
+            <h2>Sinapse da Inovação - ECM</h2>
+            <p>Protótipo de equipamento para controle microbiológico em lubrificantes, validado em campo e utilizado no Tecnova para desenvolvimento do produto final.</p>
+            <p><strong>Competências:</strong> Gestão de Projetos, Startups, Inovação.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - CTF</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+} 
+
+        nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+
+        main {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            background-color: rgba(255, 255, 255, 0.45); /* Transparência ajustada */
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ff9f00;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .category h2 {
+            font-size: 1.5rem;
+            color: #ff9f00;
+            margin-bottom: 10px;
+            text-align: left; /* Alinhado à esquerda */
+        }
+
+        .category p {
+            font-size: 1.2rem;
+            color: #000; /* Texto em preto */
+            margin-bottom: 15px;
+        }
+
+        .links {
+            font-size: 1rem;
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            color: #ff9f00;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobreeu.html">Sobre</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="portifolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🏆 CTF - Capture The Flag</h1>
+
+        <div id="ctf" class="category">
+            <h2>Laboratórios Gratuitos</h2>
+            <p>Laboratórios gratuitos para pôr à prova suas habilidades de Red Team, Blue Team e CTF:</p>
+            <ul class="links">
+                <li><a href="https://attackdefense.com" target="_blank">Ataque-Defensa</a></li>
+                <li><a href="https://alf.nu/alert1" target="_blank">Alerta para ganhar</a></li>
+                <li><a href="https://ctf.komodosec.com" target="_blank">CTF Komodo Seguridad</a></li>
+                <li><a href="https://cryptohack.org/" target="_blank">CryptoHack</a></li>
+                <li><a href="https://cmdchallenge.com" target="_blank">Desafío CMD</a></li>
+                <li><a href="https://exploit.education" target="_blank">Explotación educativa</a></li>
+                <li><a href="https://lnkd.in/e46drbz8" target="_blank">Google CTF</a></li>
+                <li><a href="https://www.hackthebox.com" target="_blank">HackTheBox</a></li>
+                <li><a href="https://www.hackthis.co.uk" target="_blank">Hackthis</a></li>
+                <li><a href="https://lnkd.in/eAB5CSTA" target="_blank">Hacksplaining</a></li>
+                <li><a href="https://ctf.hacker101.com" target="_blank">Hacker101</a></li>
+                <li><a href="https://lnkd.in/ex7R-C-e" target="_blank">Hacker de seguridad</a></li>
+                <li><a href="https://hacking-lab.com/" target="_blank">Hacking-Lab</a></li>
+                <li><a href="https://hstrike.com" target="_blank">HSTRIKE</a></li>
+                <li><a href="https://immersivelabs.com" target="_blank">ImmersiveLabs</a></li>
+                <li><a href="https://lnkd.in/ewBk6fU5" target="_blank">Concurso de novatos</a></li>
+                <li><a href="http://overthewire.org" target="_blank">OverTheWire</a></li>
+                <li><a href="https://lnkd.in/esq9Yuv5" target="_blank">Laboratorios Prácticos Pentest</a></li>
+                <li><a href="https://pentesterlab.com" target="_blank">Pentestlab</a></li>
+                <li><a href="https://hackaflag.com.br/" target="_blank">Hackaflag BR</a></li>
+                <li><a href="https://lnkd.in/e6wVANYd" target="_blank">Laboratorios de práctica de pruebas de penetración</a></li>
+                <li><a href="https://lab.pentestit.ru" target="_blank">PentestIT LAB</a></li>
+                <li><a href="https://picoctf.com" target="_blank">PicoCTF</a></li>
+                <li><a href="https://lnkd.in/eMEwBJzn" target="_blank">PWNABLE</a></li>
+                <li><a href="https://www.root-me.org" target="_blank">Root-Me</a></li>
+                <li><a href="http://rootinjail.com" target="_blank">Root en la cárcel</a></li>
+                <li><a href="https://lnkd.in/e5TAMawK" target="_blank">SANS Challenger</a></li>
+                <li><a href="https://lnkd.in/eVn9rP9p" target="_blank">SmashTheStack</a></li>
+                <li><a href="https://cryptopals.com" target="_blank">Los desafíos de Cryptopals Crypto</a></li>
+                <li><a href="https://tryhackme.com" target="_blank">Prueba Hack Me</a></li>
+                <li><a href="https://www.vulnhub.com" target="_blank">Vulnhub</a></li>
+                <li><a href="https://w3challs.com" target="_blank">W3Challs</a></li>
+                <li><a href="http://www.wechall.net" target="_blank">WeChall</a></li>
+                <li><a href="https://lnkd.in/ewJ5rNx2" target="_blank">Zenk-Seguridad</a></li>
+                <li><a href="https://lnkd.in/dVcmjEw8" target="_blank">Ciberdefensores</a></li>
+                <li><a href="https://www.tryhackme.com" target="_blank">TrytoHackme</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Marmouts - Quem Sou Eu</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('blur.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-bottom: 2px solid #ff9f00;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Garante que o menu não quebre linha */
+    padding: 0;
+    margin: 0;
+}
+
+        nav ul li a {
+    text-decoration: none;
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Media Query para Telas Pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Torna o menu vertical apenas em telas menores */
+        align-items: center; /* Centraliza os itens do menu verticalmente */
+        gap: 10px;
+    }
+}
+
+
+
+        main {
+            padding: 30px 20px;
+            background-color: rgba(255, 255, 255, 0.35);
+            border-radius: 10px;
+            margin: auto;
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff9f00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #ff9f00;
+            margin-bottom: 10px;
+        }
+
+        section p, ul {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff9f00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo pqn sem fundo.png" alt="Logo Cyber Marmouts">
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreeu.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="portifolio.html">PORTIFÓLIO</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="ctf.html">CTF</a></li>
+                <li><a href="seguranca.html">SEGURANÇA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Quem Sou Eu</h1>
+
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Com mais de 10 anos de experiência no mercado industrial, atuei diretamente com vendas técnicas B2B voltadas para a eliminação de hidrocarbonetos em processos industriais, desenvolvendo soluções para otimização de processos e sustentabilidade.</p>
+            
+            <p>Nos últimos dois anos, iniciei uma transição estratégica para a área de cibersegurança, prestando serviços para escritórios jurídicos na formação de evidências e análise de laudos técnicos em computação, incluindo perícia em armazenamento de mídia, investigações sobre vazamento de dados, análise forense de imagens e outros serviços especializados.</p>
+            
+            <p>Atualmente, estou em constante aprimoramento, estudando para as certificações AWS Certified Cloud Practitioner e CompTIA Security+, fortalecendo minha atuação na proteção digital e segurança da informação. Além disso, presto serviços de monitoramento de identidade, proteção digital familiar e segurança para pequenas empresas, auxiliando na mitigação de riscos e prevenção de ataques cibernéticos.</p>
+            
+            <h3>Áreas de Atuação</h3>
+            <ul>
+                <li><strong>Monitoramento de Identidade:</strong> Acompanhamento contínuo para prevenir fraudes e vazamentos de dados.</li>
+                <li><strong>Identificação de Haters:</strong> Rastreamento de indivíduos ou grupos responsáveis por ataques e discursos de ódio nas redes sociais.</li>
+                <li><strong>Segurança Digital Familiar:</strong> Desenvolvimento de soluções para proteger famílias contra golpes e ameaças digitais.</li>
+                <li><strong>Pentest Web:</strong> Testes de invasão para identificar vulnerabilidades em sistemas e aplicações web.</li>
+                <li><strong>Investigação de Fraudes:</strong> Análise forense e coleta de evidências para suporte em processos judiciais.</li>
+                <li><strong>Redução de Danos Pós-Golpe:</strong> Suporte para recuperação de dados e orientação jurídica.</li>
+                <li><strong>Documentoscopia e Grafoscopia:</strong> Verificação de autenticidade e possíveis falsificações de documentos físicos e digitais.</li>
+                <li><strong>Assistência Técnica em Perícias de Computação e Segurança da Informação:</strong> Suporte técnico para investigações digitais e autenticação de documentos eletrônicos.</li>
+                <li><strong>Elaboração de Laudos e Relatórios Técnicos:</strong> Suporte em casos forenses e processos judiciais.</li>
+            </ul>
+            
+            <p>Atuo ainda como perito cadastrado no FRBL do MPSC (Fundo de Reconstituição de Bens Lesados do Ministério Público de Santa Catarina), garantindo rigor técnico e confiabilidade em perícias judiciais e extrajudiciais.</p>
+            
+            <p>Minha missão é oferecer soluções eficazes e inovadoras para proteção digital e mitigação de riscos, sempre alinhando tecnologia, segurança e confiabilidade.</p>
+        </section>
+        
+
+        <section>
+            <h2>Competências</h2>
+            <ul>
+                <li>Computação Forense e Investigação Digital</li>
+                <li>Análise de fraudes e prevenção de crimes cibernéticos</li>
+                <li>Auditorias ambientais e recuperação de áreas degradadas</li>
+                <li>Desenvolvimento de soluções integradas em tecnologia e sustentabilidade</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certificações</h2>
+            <ul>
+                <li>CAPC™ Ethical Hacker - CertiProf</li>
+                <li>Analista SOC - IBSEC</li>
+                <li>Cybersecurity Awareness - IBSEC</li>
+                <li>Forense em Documentoscopia e Grafoscopia - Academia de Forense Digital</li>
+                <li>Perito Forense Digital - Academia de Forense Digital</li>
+                <li>Cybersecurity - GOOGLE </li>
+                <li>Network Support and Security - Cisco</li>
+                <li>Hacker Ético - IBSEC</li>
+                <li>Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo - Digital gov.br</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <p>Para projetos, consultorias ou mais informações, entre em contato:</p>
+            <ul>
+                <li>E-mail: <a href="mailto:marmouts@proton.me" style="color: #ff9f00;">rafaelgustavosilvapinto@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/rafael-gustavo-s-a67594197" target="_blank" style="color: #f59f15;">rafael-gustavo-s-a67594197</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber Marmouts. Todos os direitos reservados.</p>
+        <p>Code by Cyber_Marmouts</p>
+    </footer>
+</body>
+</html>
